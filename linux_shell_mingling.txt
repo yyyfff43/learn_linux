@@ -1,0 +1,54 @@
+ps -ef | grep baidu   遍历含baidu关键字的进程，ps -ef 遍历所有正在运行的进城
+kill -9 进程id    强制杀掉指定id号的进程
+
+
+如果nohup执行的命令未生成或者未执行，就把生成目录下的nohup.out日志文件删了试试
+
+grep "old_panda_10000" ~/www/front/logs/anduril.log --color
+
+sh -x 脚本名.sh  调试模式，查看变量等输出
+
+cat -s cat_test.txt                            去除 cat_test.txt 文件中的连续空行后显示，并不会修改文件本身
+例：
+line1
+
+
+line2
+
+line3
+
+执行后：
+line1
+
+line2
+
+line3
+
+cat  cat_test.txt | tr -s "\n"               去除 cat_test.txt 文件中的空行后显示，并不会修改文件本身
+例：
+line1
+
+
+line2
+
+line3
+
+执行后：
+line1
+line2
+line3
+
+find 命令使用
+find base_path 
+例如 find /home/yangfan
+显示路径/home/yangfan 下的所有文件夹和文件以及包含的子文件夹和文件
+
+find . -name "*.sh"  找到当前目录或者子目录下以.sh为结尾的文件
+
+find . -iname "*.sh" 找到当前目录或者子目录下以.sh为结尾的文件,不区分大小写
+
+find . \( -name "*.txt" -o -name "*.sh" \)  找到当前文件夹或者子文件夹中以txt或者sh为结尾的文件
+
+find . -name "*success*"  找到当前目录或者子目录下文件名包含success字符串的文件夹和文件
+
+
